@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy policy for the Daily YouTube Shorts personal creator tool.">
+    <title>Privacy policy — Daily YouTube Shorts</title>
+    <style>
+      :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #07182b; color: #edf5ff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 36px 20px; background: radial-gradient(ellipse at 50% 0%, #124c83 0, #07182b 58%); }
+      main { width: min(800px, 100%); margin: 0 auto; padding: clamp(26px, 6vw, 56px); border: 1px solid #365673; border-radius: 24px; background: #0b2036f2; box-shadow: 0 24px 80px #020b16a8; }
+      .eyebrow { color: #8dd2ff; font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { margin: 12px 0 8px; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.06; letter-spacing: -.04em; }
+      h2 { margin: 30px 0 8px; font-size: 1.15rem; }
+      p, li { color: #c2d4e5; font-size: 1rem; line-height: 1.75; }
+      ul { padding-left: 1.25rem; }
+      a { color: #8dd2ff; text-underline-offset: 4px; }
+      .date { color: #8ba3b9; font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="./">← Daily YouTube Shorts</a>
+      <div class="eyebrow">Privacy</div>
+      <h1>Privacy policy</h1>
+      <p class="date">Effective October 13, 2026</p>
+      <p>Daily YouTube Shorts is a personal tool operated for the owner of one YouTube channel. It is not offered to the public and has no third-party users.</p>
+
+      <h2>Information used</h2>
+      <ul>
+        <li>Google OAuth credentials authorize access to the owner's YouTube channel for reading recent uploads and uploading generated videos. Credentials are stored as encrypted GitHub Actions secrets.</li>
+        <li>A short voice reference supplied by the channel owner is encrypted in the private source repository. It is temporarily decrypted on an isolated cloud runner to synthesize narration, then removed when that run ends.</li>
+        <li>Public articles from a fixed set of primary-source feeds are used to prepare scripts and citations. The tool does not collect information about viewers.</li>
+      </ul>
+
+      <h2>How information is used and shared</h2>
+      <p>Information is used only to create, render, and upload the owner's videos. The tool does not sell personal information or share it with advertisers. Script generation, voice synthesis, Blender rendering, and audio mixing run on the temporary GitHub-hosted runner; no paid third-party generation service is used.</p>
+
+      <h2>Storage and retention</h2>
+      <p>OAuth credentials stay in GitHub Actions secrets. The encrypted voice reference stays in the owner's private repository. Generated scripts, source links, videos, and run status may be retained as a private workflow artifact for up to seven days. Uploaded videos follow the visibility chosen by the channel owner and remain subject to YouTube's own policies and controls.</p>
+
+      <h2>Choices and deletion</h2>
+      <p>The channel owner can disable the workflow, delete its GitHub secrets or encrypted voice file, delete workflow artifacts, and revoke the Google authorization from the Google Account security settings. No video is uploaded when a required credential or processing step is missing.</p>
+
+      <h2>Changes and contact</h2>
+      <p>This policy may be updated when the tool's data handling changes. For questions, use the support email shown on the Google OAuth consent screen for Daily YouTube Shorts.</p>
+      <p><a href="./">Back to the app information page</a></p>
+    </main>
+  </body>
+</html>
